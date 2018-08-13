@@ -1,0 +1,440 @@
+.sidebar{
+	position: fixed;
+	right: 0;
+	top: 233px;
+	@media (max-width: 1023px) {
+		display: none;
+	}
+	ul{
+		padding-left: 0;
+		margin-bottom: 0;
+		list-style: none;
+		li{
+			margin-bottom: 1px;
+			position: relative;
+			a{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background: $green;
+				width: 50px;
+				height: 50px;
+				&:hover{
+					background: #008579;
+				}
+			}
+			.hover{
+				position: absolute;
+				transition: All 0.2s ease-in-out;
+				right: 59px;
+				top: -23px;
+				opacity: 0;
+				border: 1px solid $green;
+				padding: 1px;
+			}
+			&:hover .hover{
+				opacity: 1;
+			}
+		}
+	}
+}
+
+.modal{
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,.7);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 100;
+	display: none;
+	form{
+		input[type=password],input[type=email],input[type=text],input[type=tel],select{
+			border: 1px solid #CFCFCF;
+			border-radius: 5px;
+			width: 100%;
+			height: 43px;
+			padding: 0 16px;
+			outline: none;
+			min-width: 0;
+			margin-bottom: 24px;
+			@media (max-width: 500px) {
+				flex: 0 0 100%;
+				&:first-child{
+					margin-bottom: 20px;
+				}
+			}
+		}
+		input[type=submit]{
+			width: 100%;
+			height: 40px;
+			font-family: $hm;
+			font-size: 15px;
+			color: white;
+			line-height: 40px;
+			background: #00AE9E;
+			border-radius: 3px;
+			outline: none;
+			border: none;
+			margin-bottom: 20px;
+			cursor: pointer;
+			transition: All 0.2s ease-in-out;
+			&:hover{
+
+			}
+		}
+	}
+	.reg-log{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		a{
+			font-family: $hl;
+			font-size: 15px;
+			line-height: 20px;
+			color: $green;
+			transition: All 0.2s ease-in-out;
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+		p{
+			margin-bottom: 0;
+		}
+	}
+	.close{
+		position: absolute;
+		width: 50px;
+		height: 50px;
+		top: -65px;
+		right: 0;
+		background: url(../images/close.svg) no-repeat;
+		background-size: 100%;
+		cursor: pointer;
+		transition: All 0.2s ease-in-out;
+		@media (max-width: 1023px) {
+			width: 30px;
+			height: 30px;
+			top: -45px;
+		}
+		&:hover{
+			opacity: .7;
+		}
+	}
+	.login , .signup{
+		display: flex;
+		width: 1170px;
+		margin: 0 auto;
+		position: relative;
+		flex-wrap: wrap;
+		@media (max-width: 1280px) {
+			width: 90%;
+		}
+		> .left{
+			flex: 0 0 56.3%;
+			background: $green;
+			padding: 60px 150px 60px 60px;
+			border-radius: 5px 0 0 5px;
+			box-shadow: 0 2px 4px 0 rgba(222,222,222,0.50);
+			@media (max-width: 1439px) {
+				padding: 40px;
+			}
+			@media (max-width: 1023px) {
+				flex: 0 0 100%;
+				max-width: 500px;
+				margin: 0 auto;
+				border-radius: 5px 5px 0 0;
+			}
+			@media (max-width: 500px) {
+				padding: 20px;
+			}
+			h4{
+				font-family: $hm;
+				font-size: 15px;
+				line-height: 18px;
+				color: white;
+				margin-bottom: 20px;
+				@media (max-width: 500px) {
+					margin-bottom: 10px;
+				}
+			}
+			h2{
+				font-family: $gb;
+				font-size: 40px;
+				line-height: 50px;
+				color: white;
+				margin-bottom: 121px;
+				@media (max-width: 1023px) {
+					font-size: 30px;
+					margin-bottom: 50px;
+					line-height: 1.3;
+				}
+				@media (max-width: 500px) {
+					font-size: 20px;
+					margin-bottom: 20px;
+				}
+			}
+			p{
+				font-family: $hm;
+				font-size: 15px;
+				line-height: 18px;
+				color: white;
+				a{
+					font-family: $hm;
+					font-size: 15px;
+					line-height: 18px;
+					text-decoration: underline;
+					color: white;
+					&:hover{
+						opacity: .7;
+					}
+				}
+			}
+		}
+		> .right{
+			flex: 0 0 43.7%;
+			background: white;
+			padding: 60px 60px 60px 66px;
+			border: 1px solid #EEEEEE;
+			box-shadow: 0 2px 4px 0 rgba(222,222,222,0.50);
+			border-radius: 0 5px 5px 0;
+			@media (max-width: 1439px) {
+				padding: 40px;
+			}
+			@media (max-width: 1023px) {
+				flex: 0 0 100%;
+				max-width: 500px;
+				margin: 0 auto;
+				border-radius: 0 0 5px 5px;
+			}
+			@media (max-width: 500px) {
+				padding: 20px;
+			}
+		}
+	}
+	.signup-adv{
+		display: flex;
+		width: 90%;
+		width: 1170px;
+		margin: 0 auto;
+		position: relative;
+		background: #FDFDFD;
+		border: 1px solid #EEEEEE;
+		box-shadow: 0 2px 4px 0 rgba(222,222,222,0.50);
+		border-radius: 5px;
+		padding: 55px 60px 40px ;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		@media (max-width: 1280px) {
+			width: 90%;
+		}
+		@media (max-width: 767px) {
+			max-width: 500px;
+			padding: 40px;
+		}
+		> .left{
+			flex: 0 0 20%;
+			position: relative;
+			@media (max-width: 767px) {
+				flex: 0 0 100%;
+			}
+			h4{
+				font-family: $hm;
+				font-size: 15px;
+				line-height: 18px;
+				color: $green;
+				margin-bottom: 20px;
+				&.bottom{
+					position: absolute;
+					left: 0;
+					bottom: 0;
+					@media (max-width: 767px) {
+						position: static;
+					}
+					a{
+						font-family: $hm;
+						font-size: 15px;
+						line-height: 18px;
+						color: $green;
+						text-decoration: underline;
+						&:hover{
+							opacity: .7;
+						}
+					}
+				}
+			}
+		}
+		> .mid{
+			flex: 0 0 36.1%;
+			@media (max-width: 767px) {
+				flex: 0 0 100%;
+			}
+		}
+		> .right{
+			flex: 0 0 36.1%;
+			@media (max-width: 767px) {
+				flex: 0 0 100%;
+			}
+		}
+	}
+}
+
+footer{
+	.footer-top{
+		background: #00AE9E url(../images/footer-bg.svg) right bottom no-repeat;
+		background-size: 425px 290px;
+		padding: 45px 0 30px;
+		@media (max-width: 1023px) {
+			background-size: 40% 60%;
+			background-position: 110% 100%;
+		}
+		@media (max-width: 767px) {
+			background: #00AE9E;
+		}
+		.footer-top-wrap{
+			position: relative;
+			width: 90%;
+			max-width: 1170px;
+			margin: 0 auto;
+			display: flex;
+			flex-wrap: wrap;
+			.col{
+				flex: 0 0 203px;
+				margin-bottom: 30px;
+				@media (max-width: 767px) {
+					flex: 0 0 50%;
+				}
+				@media (max-width: 500px) {
+					margin-bottom: 15px;
+				}
+			}
+			.social{
+				flex: 0 0 100%;
+				a{
+					&:not(:last-child){
+						margin-right: 13px;
+					}
+					i{
+						font-size: 19px;
+						color: white;
+						transition: All 0.2s ease-in-out;
+					}
+					&:hover i{
+						opacity: .7;
+					}
+				}
+			}
+			ul{
+				list-style: none;
+				padding-left: 0;
+				margin-bottom: 0;
+			}
+			li{
+				margin-bottom: 8px;
+				a{
+					transition: All 0.2s ease-in-out;
+					font-family: $hb;
+					font-size: 12px;
+					line-height: 1.2;
+					color: white;
+					&:hover{
+						opacity: 0.7;
+					}
+				}
+			}
+		}
+	}
+	.footer-bottom{
+		position: relative;
+		width: 90%;
+		max-width: 1170px;
+		margin: 0 auto;
+		display: flex;
+		padding: 15.5px 0;
+		flex-wrap: wrap;
+		@media (max-width: 1023px) {
+			display: block;
+		}
+		.left{
+			display: flex;
+			align-items: center;
+			@media (max-width: 1023px) {
+				display: block;
+				text-align: center;
+				margin-bottom: 5px;
+			}
+			p{
+				font-family: $hb;
+				font-size: 11px;
+				color: #727272;
+				line-height: 13px;
+				margin-bottom: 0;
+			}
+		}
+		.mid{
+			display: flex;
+			align-items: center;
+			margin-left: 95px;
+			@media (max-width: 1023px) {
+				margin-left: 0;
+				display: block;
+				text-align: center;
+				margin-bottom: 5px;
+			}
+			.link{
+				@media (max-width: 1023px) {
+					display: flex;
+				    justify-content: center;
+				}
+			}
+			ul{
+				list-style: none;
+				padding-left: 0;
+				margin-bottom: 0;
+				display: flex;
+				li{
+					&:not(:last-child):after{
+						content: '|';
+						margin: 0 10px;
+					}
+					a{
+						font-family: $hb;
+						font-size: 11px;
+						color: #727272;
+						line-height: 13px;
+						transition: All 0.2s ease-in-out;
+						&:hover{
+							color: $green;
+						}
+					}
+				}
+			}
+		}
+
+		.right{
+			margin-left: auto;
+			display: flex;
+			align-items: center;
+			@media (max-width: 1023px) {
+				display: block;
+				text-align: center;
+			}
+			p{
+				font-family: $hb;
+				font-size: 11px;
+				line-height: 13px;
+				color: #727272;
+				margin-bottom: 0;
+				a{
+					color: $green;
+					&:hover{
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
+}

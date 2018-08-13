@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Contact Us - Commonrealty</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/fontawesome-all.min.css">
+	<link rel="stylesheet" href="css/wowo.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!-- <link rel="icon" href="images/favicon.png" type="image/x-icon" /> -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/float-menu.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtif_55BBHAe8Agti2k1TTnjMKNsGlNrI"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+	<header>
+		<div class="nav">
+			<div class="nav-top">
+				<div class="nav-top-wrap">
+					<div class="left">
+						<div class="links">
+							<ul>
+								<li><a href="#">Partner</a></li>
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">Contact Us</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="right">
+						<div class="switch-language">
+							<div class="current-language">中文</div>
+							<ul>
+								<li class="active"><a href="#">English</a></li>
+								<li><a href="#">中文</a></li>
+							</ul>
+						</div>
+						<div class="login">
+							<a class="btn open-modal" href="#">Login / Regester</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="nav-bottom">
+				<div class="logo">
+					<a href="#"><img src="images/logo.svg" alt="Commonrealty"></a>
+				</div>
+				<div class="menu">
+					<ul>
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#">Projects</a></li>
+						<li><a href="#">Services</a></li>
+						<li><a href="#">Market Research</a></li>
+						<li><a href="#">Media</a></li>
+					</ul>
+				</div>
+				<div class="nav-hamburger">
+					<button class="hamburger hamburger--slider" type="button">
+						<span class="hamburger-box">
+							<span class="hamburger-inner"></span>
+						</span>
+					</button>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="menu-hide">
+		<div class="menu-content">
+			<div class="menu-hide-wrap">
+				<div class="mobile-menu">
+					<ul>
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#">Projects</a></li>
+						<li><a href="#">Services</a></li>
+						<li><a href="#">Market Research</a></li>
+						<li><a href="#">Media</a></li>
+						<li><a href="#">Partner</a></li>
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Contact Us</a></li>
+					</ul>
+				</div>
+				<div class="switch-language">
+					<div class="current-language">中文</div>
+					<ul>
+						<li class="active"><a href="#">English</a></li>
+						<li><a href="#">中文</a></li>
+					</ul>
+				</div>
+				<div class="login">
+					<a class="btn open-modal" href="#">Login / Regester</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="wrapper">
+		<section class="contact-us">
+			<div class="contact-us-wrap">
+				<div class="title wowo fadeInUp">
+					<div class="left">
+						<h1>Contact Us</h1>
+					</div>
+				</div>
+				<div class="text-form">
+					<div class="left wowo fadeInUp" style="animation-delay: 0.2s;">
+						<div class="text-block office">
+							<h2>Head Office</h2>
+							<p><strong>Address</strong> <a href="https://www.google.com.au/maps/place/101%2F545+Pacific+Hwy,+St+Leonards+NSW+2065Australia/@-33.8247932,151.1961716,17z/data=!3m1!4b1!4m5!3m4!1s0x6b12aedd51ccea9f:0x2acf377a2d9a0a3!8m2!3d-33.8247932!4d151.1983603" target="_blank">101/545 Pacific Highway, St Leonards NSW 2065</a></p>
+							<p><strong>Phone</strong> <a href="tel:61294381451">+61 2 9438 1451</a></p>
+							<p><strong>Email</strong> <a href="mailto:info@commonrealty.com.au">info@commonrealty.com.au</a></p>
+						</div>
+						<div class="text-block hours">
+							<h2>Trading Hours</h2>
+							<p><strong>Monday to Friday</strong> 10:00am to 5:00pm</p>
+							<p><strong>Saturday and Sunday </strong> Closed</p>
+						</div>
+					</div>
+					<div class="right wowo fadeInUp" style="animation-delay: 0.4s;">
+						<h2>General Enquiry, How Can We Help?</h2>
+						<form action="">
+							<div class="line-wrap">
+								<input type="text" placeholder="First Name">
+								<input type="text" placeholder="Last Name">
+							</div>
+							<div class="line-wrap">
+								<input type="email" placeholder="Email">
+								<input type="text" placeholder="Phone">
+							</div>
+							<div class="line-wrap">
+								<textarea placeholder="Your Message"></textarea>
+							</div>
+							<div class="submit-wrap">
+								<input type="submit" value="Submit">
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="map" id="map" style="width: 100%;height: 464px;">
+		</section>
+		<script>
+		    function initMap() {
+		        var styleArray =
+		        	[
+		        	  {
+		        	    "elementType": "geometry",
+		        	    "stylers": [
+		        	      {
+		        	        "color": "#f5f5f5"
+		        	      }
+		        	    ]
+		        	  },
+		        	  {
+		        	    "elementType": "labels.icon",
+		        	    "stylers": [
+		        	      {
+		        	        "visibility": "off"
+		        	      }
+		        	    ]
+		        	  },
+		        	  {
+		        	    "elementType": "labels.text.fill",
+		        	    "stylers": [
+		        	      {
+		        	        "color": "#616161"
+		        	      }
+		        	    ]
+		        	  },
+		        	  {
+		        	    "elementType": "labels.text.stroke",
+		        	    "stylers": [
+		        	      {
+		        	        "color": "#f5f5f5"
+		        	      }
+		        	    ]
+		        	  },
+		        	  {
+		        	    "featureType": "administrative.land_parcel",
+		        	    "elementType": "labels.text.fill",
+		        	    "stylers": [
+		        	      {
+		        	        "color": "#bdbdbd"
+		        	      }
+		        	    ]
+		        	  },
+		        	  {
+		        	    "featureType": "poi",
+		        	    "elementType": "geometry",
+		        	    "stylers": [
+		        	      {
+		        	        "color": "#eeeeee"
+		        	      }
+		        	    ]
+		        	  },
+		        	  {
+		        	    "featureType": "poi",
+		        	    "elementType": "labels.text.fill",
+		        	    "stylers": [
+		        	      {
+		        	        "color": "#757575"
+		        	      }
+		        	    ]
+		        	  },
+		        	  {
+		        	    "featureType": "poi.park",
+		        	    "elementType": "geometry",
+		        	    "stylers": [
+		        	      {
+		        	        "color": "#e5e5e5"
+		        	      }
+		        	    ]
+		        	  },
+		        	  {
+		        	    "featureType": "poi.park",
+		        	    "elementType": "labels.text.fill",
+		        	    "stylers": [
+		        	      {
+		        	        "color": "#9e9e9e"
+		        	      }
+		        	    ]
+		        	  },
+		        	  {
+		        	    "featureType": "road",
+		        	    "elementType": "geometry",
+		        	    "stylers": [
+		        	      {
+		        	        "color": "#ffffff"
+		        	      }
+		        	    ]
+		        	  },
+		        	  {
+		        	    "featureType": "road.arterial",
+		        	    "elementType": "labels.text.fill",
+		        	    "stylers": [
+		        	      {
+		        	        "color": "#757575"
+		        	      }
+		        	    ]
+		        	  },
+		        	  {
+		        	    "featureType": "road.highway",
+		        	    "elementType": "geometry",
+		        	    "stylers": [
+		        	      {
+		        	        "color": "#dadada"
+		        	      }
+		        	    ]
+		        	  },
+		        	  {
+		        	    "featureType": "road.highway",
+		        	    "elementType": "labels.text.fill",
+		        	    "stylers": [
+		        	      {
+		        	        "color": "#616161"
+		        	      }
+		        	    ]
+		        	  },
+		        	  {
+		        	    "featureType": "road.local",
+		        	    "elementType": "labels.text.fill",
+		        	    "stylers": [
+		        	      {
+		        	        "color": "#9e9e9e"
+		        	      }
+		        	    ]
+		        	  },
+		        	  {
+		        	    "featureType": "transit.line",
+		        	    "elementType": "geometry",
+		        	    "stylers": [
+		        	      {
+		        	        "color": "#e5e5e5"
+		        	      }
+		        	    ]
+		        	  },
+		        	  {
+		        	    "featureType": "transit.station",
+		        	    "elementType": "geometry",
+		        	    "stylers": [
+		        	      {
+		        	        "color": "#eeeeee"
+		        	      }
+		        	    ]
+		        	  },
+		        	  {
+		        	    "featureType": "water",
+		        	    "elementType": "geometry",
+		        	    "stylers": [
+		        	      {
+		        	        "color": "#c9c9c9"
+		        	      }
+		        	    ]
+		        	  },
+		        	  {
+		        	    "featureType": "water",
+		        	    "elementType": "labels.text.fill",
+		        	    "stylers": [
+		        	      {
+		        	        "color": "#9e9e9e"
+		        	      }
+		        	    ]
+		        	  }
+		        	];
+		        var mapOptions = new google.maps.Map(document.getElementById('map'), {
+		            zoom: 16,
+		            center: new google.maps.LatLng(-33.82340758053426,151.19792985250095),
+		            styles: styleArray,
+		            scrollwheel: false,
+		            draggable:false
+		        });
+
+		        var beachMarker = new google.maps.Marker({
+		            position: {lat: -33.82340758053426, lng:151.19792985250095},
+		            map: mapOptions,
+		            icon: 'images/marker.png',
+		        });
+		    }
+		    if (jQuery('#map').length > 0) {
+		        initMap();
+		        jQuery(window).resize(initMap);
+		    }
+		</script>
+	</div>
+	<section class="sidebar">
+		<ul>
+			<li><a title="xxx1" href="#"><img src="images/photo.svg" alt=""></a></li>
+			<li><a title="wechat" href="#"><img src="images/wechat.svg" alt=""></a><div class="hover"><img src="images/bitmap.svg" alt=""></div></li>
+			<li><a title="xxx2" href="#"><img src="images/talk.svg" alt=""></a></li>
+			<li><a title="phone" href="#"><img src="images/phone.svg" alt=""></a></li>
+			<li><a title="email" href="#"><img src="images/mail.svg" alt=""></a></li>
+		</ul>
+	</section>
+	<section class="modal">
+		<div class="mobile-scroll">
+			<div class="login modal-box">
+				<div class="left">
+					<h4>LOGIN</h4>
+					<h2>To explore our varity projects and price range, please log in.</h2>
+					<p style="opacity: 0">Are you an agent? <a href="#">Sign up here</a></p>
+				</div>
+				<div class="right">
+					<form action="">
+						<input type="email" placeholder="Email*">
+						<input type="password" placeholder="Password*">
+						<input type="submit" value="Login">
+					</form>
+					<div class="reg-log">
+						<div class="left">
+							<p>Don’t have an account? <a class="reg-modal" href="#">Register Now</a></p>
+						</div>
+						<div class="right">
+							<p><a href="#">Forgot Password</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="close" title="close"></div>
+			</div>
+			<div class="signup modal-box" style="display: none;">
+				<div class="left">
+					<h4>SIGN UP</h4>
+					<h2>To explore our varity projects and price range, please sign up.</h2>
+					<p>Are you an agent? <a class="reg-modal-adv" href="#">Sign up here</a></p>
+				</div>
+				<div class="right">
+					<form action="">
+						<input type="text" placeholder="Name*">
+						<input type="email" placeholder="Email*">
+						<input type="password" placeholder="Password*">
+						<input type="password" placeholder="Confirm password*">
+						<input type="submit" value="Login">
+					</form>
+					<div class="reg-log">
+						<div class="left">
+							<p>Already have an account? <a class="login-modal" href="#">Sign In now</a></p>
+						</div>
+						<div class="right">
+							<p><a href="#">Forgot Password</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="close" title="close"></div>
+			</div>
+			<form class="signup-adv modal-box" style="display: none;">
+				<div class="left">
+					<h4>SIGN UP</h4>
+					<h4 class="bottom">Not an agent? <a class="reg-modal" href="#">Sign up here</a></h4>
+				</div>
+				<div class="mid">
+					<input type="text" placeholder="Company*">
+					<input type="text" placeholder="Role*">
+					<select name="" id="">
+						<option >Industry*</option>
+						<option value="111">111</option>
+						<option value="222">222</option>
+						<option value="333">333*</option>
+					</select>
+					<input type="tel" placeholder="Phone*">
+				</div>
+				<div class="right">
+					<input type="text" placeholder="Name*">
+					<input type="email" placeholder="Email*">
+					<input type="password" placeholder="Password*">
+					<input type="password" placeholder="Confirm password*">
+					<input type="submit" value="Login">
+					<div class="reg-log">
+						<div class="left">
+							<p>Already have an account? <a class="login-modal" href="#">Sign In now</a></p>
+						</div>
+						<div class="right">
+							<p><a href="#">Forgot Password</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="close" title="close"></div>
+			</form>
+		</div>
+	</section>
+	<footer>
+		<div class="footer-top">
+			<div class="footer-top-wrap">
+				<div class="col">
+					<div class="links">
+						<ul>
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Projects</a></li>
+							<li><a href="#">Media</a></li>
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">Short List</a></li>
+							<li><a href="#">Market Insight</a></li>
+							<li><a href="#">Expert Advice</a></li>
+							<li><a href="#">Educational content</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col">
+					<div class="links">
+						<ul>
+							<li><a href="#">Services</a></li>
+							<li><a href="#">Lease & Management</a></li>
+							<li><a href="#">Real Estate Advisory</a></li>
+							<li><a href="#">Project Marketing</a></li>
+							<li><a href="#">Property Portfolio Management</a></li>
+							<li><a href="#">Property Sale</a></li>
+							<li><a href="#">Clients from Overseas</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col">
+					<div class="links">
+						<ul>
+							<li><a href="#">Login / Register</a></li>
+							<li><a href="#">Agent Login</a></li>
+							<li><a href="#">Short List</a></li>
+							<li><a href="#">Contact Us</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="social">
+					<a href="#" target="_blank" title="facebook"><i class="fab fa-facebook-f" ></i></a>
+					<a href="#" target="_blank" title="twitter"><i class="fab fa-twitter" ></i></a>
+					<a href="#" target="_blank" title="instagram"><i class="fab fa-instagram" ></i></a>
+					<a href="#" target="_blank" title="pinterest"><i class="fab fa-pinterest-p" ></i></a>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="left">
+				<p>Copyright 2018 Common Realty Group</p>
+			</div>
+			<div class="mid">
+				<div class="link">
+					<ul>
+						<li><a href="#">Terms & Conditions</a></li>
+						<li><a href="#">Disclaimer</a></li>
+						<li><a href="#">Sitemap</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="right">
+				<p>Website Designed & Powered by <a href="#">Nexty</a></p>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
