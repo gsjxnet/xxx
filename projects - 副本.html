@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Projects - Commonrealty</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/fontawesome-all.min.css">
+	<link rel="stylesheet" href="css/wowo.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!-- <link rel="icon" href="images/favicon.png" type="image/x-icon" /> -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/float-menu.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtif_55BBHAe8Agti2k1TTnjMKNsGlNrI"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+	<header>
+		<div class="nav">
+			<div class="nav-top">
+				<div class="nav-top-wrap">
+					<div class="left">
+						<div class="links">
+							<ul>
+								<li><a href="#">Partner</a></li>
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">Contact Us</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="right">
+						<div class="switch-language">
+							<div class="current-language">中文</div>
+							<ul>
+								<li class="active"><a href="#">English</a></li>
+								<li><a href="#">中文</a></li>
+							</ul>
+						</div>
+						<div class="login">
+							<a class="btn open-modal" href="#">Login / Regester</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="nav-bottom">
+				<div class="logo">
+					<a href="#"><img src="images/logo.svg" alt="Commonrealty"></a>
+				</div>
+				<div class="menu">
+					<ul>
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#">Projects</a></li>
+						<li><a href="#">Services</a></li>
+						<li><a href="#">Market Research</a></li>
+						<li><a href="#">Media</a></li>
+					</ul>
+				</div>
+				<div class="nav-hamburger">
+					<button class="hamburger hamburger--slider" type="button">
+						<span class="hamburger-box">
+							<span class="hamburger-inner"></span>
+						</span>
+					</button>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="menu-hide">
+		<div class="menu-content">
+			<div class="menu-hide-wrap">
+				<div class="mobile-menu">
+					<ul>
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#">Projects</a></li>
+						<li><a href="#">Services</a></li>
+						<li><a href="#">Market Research</a></li>
+						<li><a href="#">Media</a></li>
+						<li><a href="#">Partner</a></li>
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Contact Us</a></li>
+					</ul>
+				</div>
+				<div class="switch-language">
+					<div class="current-language">中文</div>
+					<ul>
+						<li class="active"><a href="#">English</a></li>
+						<li><a href="#">中文</a></li>
+					</ul>
+				</div>
+				<div class="login">
+					<a class="btn open-modal" href="#">Login / Regester</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="wrapper">
+		<section class="projects-archive">
+			<div class="projects-wrap-top">
+				<div class="title wowo fadeInUp">
+					<div class="left">
+						<h1>Projects</h1>
+					</div>
+					<div class="right">
+						<div class="search">
+							<form action="">
+								<input type="text" placeholder="Search by State, suburb or postcode">
+								<button><img src="images/search.svg" alt=""></button>
+							</form>
+						</div>
+						<div class="switch">
+							<ul>
+								<li><a href="#">
+									<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+										 xml:space="preserve" style="width: 20px;height: 27px;">
+									<circle class="st0" cx="10.1" cy="7.9" r="2.2"/>
+									<path class="st0" d="M17.5,7.9c0,3.2-4.4,9.9-6.4,12.9c-0.5,0.7-1.5,0.7-2,0c-2-2.9-6.4-9.7-6.4-12.9c0-4.1,3.3-7.4,7.4-7.4
+										S17.5,3.8,17.5,7.9z"/>
+									<path class="st0" d="M6.5,17.3l-0.4,0.1l-1.2,0.4c-0.2,0.1-0.4,0.2-0.5,0.5l-3.8,6.9c-0.1,0.2,0.1,0.5,0.4,0.4l4.4-2.3l4.2,1.9
+										c0.3,0.1,0.6,0.1,0.8,0l4.2-1.9l4.4,2.3c0.3,0.1,0.5-0.2,0.4-0.4l-3.8-6.9c-0.1-0.2-0.3-0.4-0.5-0.5l-1.7-0.5"/>
+									</svg>
+								</a></li>
+								<li class="active"><a href="#">
+									<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+										 viewBox="0 0 100 100" style="width: 22px; height: 22px;" xml:space="preserve">
+									<g>
+										<path class="st2" d="M37.8,49H11C4.9,49-0.1,44-0.1,37.8V11.1C-0.1,5,4.9,0,11,0h26.7c6.1,0,11.1,5,11.1,11.1v26.7
+											C48.9,44,43.9,49,37.8,49z M11,4.5c-3.7,0-6.7,3-6.7,6.7v26.7c0,3.7,3,6.7,6.7,6.7h26.7c3.7,0,6.7-3,6.7-6.7V11.1
+											c0-3.7-3-6.7-6.7-6.7H11z"/>
+										<path class="st2" d="M89,49H62.2c-6.1,0-11.1-5-11.1-11.1V11.1C51.1,5,56.1,0,62.2,0H89c6.1,0,11.1,5,11.1,11.1v26.7
+											C100.1,44,95.1,49,89,49z M62.2,4.5c-3.7,0-6.7,3-6.7,6.7v26.7c0,3.7,3,6.7,6.7,6.7H89c3.7,0,6.7-3,6.7-6.7V11.1
+											c0-3.7-3-6.7-6.7-6.7H62.2z"/>
+										<path class="st2" d="M37.8,100H11c-6.1,0-11.1-5-11.1-11.1V62.2C-0.1,56,4.9,51,11,51h26.7c6.1,0,11.1,5,11.1,11.1v26.7
+											C48.9,95,43.9,100,37.8,100z M11,55.5c-3.7,0-6.7,3-6.7,6.7v26.7c0,3.7,3,6.7,6.7,6.7h26.7c3.7,0,6.7-3,6.7-6.7V62.2
+											c0-3.7-3-6.7-6.7-6.7H11z"/>
+										<path class="st2" d="M89,100H62.2c-6.1,0-11.1-5-11.1-11.1V62.2c0-6.1,5-11.1,11.1-11.1H89c6.1,0,11.1,5,11.1,11.1v26.7
+											C100.1,95,95.1,100,89,100z M62.2,55.5c-3.7,0-6.7,3-6.7,6.7v26.7c0,3.7,3,6.7,6.7,6.7H89c3.7,0,6.7-3,6.7-6.7V62.2
+											c0-3.7-3-6.7-6.7-6.7H62.2z"/>
+									</g>
+									</svg>
+								</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="filter wowo fadeInUp">
+					<div class="filter-wrap">
+						<form action="">
+							<div class="normal">
+								<div class="select-wrap">
+									<h4>Search</h4>
+									<div class="line-wrap">
+										<select>
+											<option value="0">Bedrooms</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+										</select>
+										<select>
+											<option value="0">Property Type</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+										</select>
+										<select>
+											<option value="0">Price</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+										</select>
+									</div>
+								</div>
+								<div class="select-wrap">
+									<h4>Advanced filters</h4>
+									<div class="line-wrap">
+										<select>
+											<option value="0">Bathrooms</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+										</select>
+										<select>
+											<option value="0">Car Space</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+										</select>
+										<input type="text" placeholder="Special Propmotion">
+									</div>
+								</div>
+								<div class="more-btn">
+									<a href="#">More Refinements</a>
+								</div>
+							</div>
+							<div class="more">
+								<div class="select-wrap">
+									<h4>Other</h4>
+									<div class="line-wrap">
+										<div class="checkbox">
+											<input type="checkbox" name="other" id="other-1">
+											<label for="other-1">Gym</label>
+										</div>
+										<div class="checkbox">
+											<input type="checkbox" name="other" id="other-2">
+											<label for="other-2">Beaches</label>
+										</div>
+										<div class="checkbox">
+											<input type="checkbox" name="other" id="other-3">
+											<label for="other-3">Parks</label>
+										</div>
+									</div>
+								</div>
+								<div class="select-wrap">
+									<h4>Investments</h4>
+									<div class="line-wrap">
+										<div class="checkbox">
+											<input type="checkbox" name="investments" id="investments-1">
+											<label for="investments-1">Train station</label>
+										</div>
+										<div class="checkbox">
+											<input type="checkbox" name="investments" id="investments-2">
+											<label for="investments-2">Infrastructure</label>
+										</div>
+										<div class="checkbox">
+											<input type="checkbox" name="investments" id="investments-3">
+											<label for="investments-3">Master planned</label>
+										</div>
+										<div class="checkbox">
+											<input type="checkbox" name="investments" id="investments-4">
+											<label for="investments-4">Water views</label>
+										</div>
+										<div class="checkbox">
+											<input type="checkbox" name="investments" id="investments-5">
+											<label for="investments-5">Universities</label>
+										</div>
+										<div class="checkbox">
+											<input type="checkbox" name="investments" id="investments-6">
+											<label for="investments-6">Shopping centre</label>
+										</div>
+										<div class="checkbox">
+											<input type="checkbox" name="investments" id="investments-7">
+											<label for="investments-7">Project employment hub</label>
+										</div>
+										<div class="checkbox">
+											<input type="checkbox" name="investments" id="investments-8">
+											<label for="investments-8">Schools</label>
+										</div>
+									</div>
+								</div>
+								<div class="select-wrap">
+									<h4>Completion date</h4>
+									<div class="line-wrap">
+										<div class="checkbox">
+											<input type="checkbox" name="investments" id="completion-date-1">
+											<label for="completion-date-1">3 - 6 months</label>
+										</div>
+										<div class="checkbox">
+											<input type="checkbox" name="investments" id="completion-date-2">
+											<label for="completion-date-2">7 - 12 months</label>
+										</div>
+										<div class="checkbox">
+											<input type="checkbox" name="investments" id="completion-date-3">
+											<label for="completion-date-3">12 - 24 months</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="projects-wrap-bottom wowo fadeInUp">
+				<div class="new-wrap">
+					<div class="left">
+						<div id="map" style="width: 100%;height: 656px;"></div>
+					</div>
+					<script>
+					    function initMap() {
+					        var styleArray =
+					        	[
+					        	  {
+					        	    "elementType": "geometry",
+					        	    "stylers": [
+					        	      {
+					        	        "color": "#f5f5f5"
+					        	      }
+					        	    ]
+					        	  },
+					        	  {
+					        	    "elementType": "labels.icon",
+					        	    "stylers": [
+					        	      {
+					        	        "visibility": "off"
+					        	      }
+					        	    ]
+					        	  },
+					        	  {
+					        	    "elementType": "labels.text.fill",
+					        	    "stylers": [
+					        	      {
+					        	        "color": "#616161"
+					        	      }
+					        	    ]
+					        	  },
+					        	  {
+					        	    "elementType": "labels.text.stroke",
+					        	    "stylers": [
+					        	      {
+					        	        "color": "#f5f5f5"
+					        	      }
+					        	    ]
+					        	  },
+					        	  {
+					        	    "featureType": "administrative.land_parcel",
+					        	    "elementType": "labels.text.fill",
+					        	    "stylers": [
+					        	      {
+					        	        "color": "#bdbdbd"
+					        	      }
+					        	    ]
+					        	  },
+					        	  {
+					        	    "featureType": "poi",
+					        	    "elementType": "geometry",
+					        	    "stylers": [
+					        	      {
+					        	        "color": "#eeeeee"
+					        	      }
+					        	    ]
+					        	  },
+					        	  {
+					        	    "featureType": "poi",
+					        	    "elementType": "labels.text.fill",
+					        	    "stylers": [
+					        	      {
+					        	        "color": "#757575"
+					        	      }
+					        	    ]
+					        	  },
+					        	  {
+					        	    "featureType": "poi.park",
+					        	    "elementType": "geometry",
+					        	    "stylers": [
+					        	      {
+					        	        "color": "#e5e5e5"
+					        	      }
+					        	    ]
+					        	  },
+					        	  {
+					        	    "featureType": "poi.park",
+					        	    "elementType": "labels.text.fill",
+					        	    "stylers": [
+					        	      {
+					        	        "color": "#9e9e9e"
+					        	      }
+					        	    ]
+					        	  },
+					        	  {
+					        	    "featureType": "road",
+					        	    "elementType": "geometry",
+					        	    "stylers": [
+					        	      {
+					        	        "color": "#ffffff"
+					        	      }
+					        	    ]
+					        	  },
+					        	  {
+					        	    "featureType": "road.arterial",
+					        	    "elementType": "labels.text.fill",
+					        	    "stylers": [
+					        	      {
+					        	        "color": "#757575"
+					        	      }
+					        	    ]
+					        	  },
+					        	  {
+					        	    "featureType": "road.highway",
+					        	    "elementType": "geometry",
+					        	    "stylers": [
+					        	      {
+					        	        "color": "#dadada"
+					        	      }
+					        	    ]
+					        	  },
+					        	  {
+					        	    "featureType": "road.highway",
+					        	    "elementType": "labels.text.fill",
+					        	    "stylers": [
+					        	      {
+					        	        "color": "#616161"
+					        	      }
+					        	    ]
+					        	  },
+					        	  {
+					        	    "featureType": "road.local",
+					        	    "elementType": "labels.text.fill",
+					        	    "stylers": [
+					        	      {
+					        	        "color": "#9e9e9e"
+					        	      }
+					        	    ]
+					        	  },
+					        	  {
+					        	    "featureType": "transit.line",
+					        	    "elementType": "geometry",
+					        	    "stylers": [
+					        	      {
+					        	        "color": "#e5e5e5"
+					        	      }
+					        	    ]
+					        	  },
+					        	  {
+					        	    "featureType": "transit.station",
+					        	    "elementType": "geometry",
+					        	    "stylers": [
+					        	      {
+					        	        "color": "#eeeeee"
+					        	      }
+					        	    ]
+					        	  },
+					        	  {
+					        	    "featureType": "water",
+					        	    "elementType": "geometry",
+					        	    "stylers": [
+					        	      {
+					        	        "color": "#c9c9c9"
+					        	      }
+					        	    ]
+					        	  },
+					        	  {
+					        	    "featureType": "water",
+					        	    "elementType": "labels.text.fill",
+					        	    "stylers": [
+					        	      {
+					        	        "color": "#9e9e9e"
+					        	      }
+					        	    ]
+					        	  }
+					        	];
+					        var mapOptions = new google.maps.Map(document.getElementById('map'), {
+					            zoom: 16,
+					            center: new google.maps.LatLng(-33.82340758053426,151.19792985250095),
+					            styles: styleArray,
+					            scrollwheel: false,
+					            draggable:false
+					        });
+
+					        var beachMarker1 = new google.maps.Marker({
+					            position: {lat: -33.82340758053426, lng:151.19792985250095},
+					            map: mapOptions,
+					            icon: 'images/marker.png',
+					        });
+
+					        var beachMarker2 = new google.maps.Marker({
+					            position: {lat: -33.82523473771167, lng:151.20207118321994},
+					            map: mapOptions,
+					            icon: 'images/marker.png',
+					        });
+
+					        var beachMarker3 = new google.maps.Marker({
+					            position: {lat: -33.82709305020665, lng:151.20302068521121},
+					            map: mapOptions,
+					            icon: 'images/marker.png',
+					        });
+
+					        google.maps.event.addListener(beachMarker1, 'click', function() {
+					        	$('html,body').stop(true);
+					        	$('html,body').animate({scrollTop: jQuery('.new-wrap >.right > .blocks > .block').eq(0).offset().top}, 300);
+					        });
+
+					        google.maps.event.addListener(beachMarker2, 'click', function() {
+					        	$('html,body').stop(true);
+					        	$('html,body').animate({scrollTop: jQuery('.new-wrap >.right > .blocks > .block').eq(1).offset().top}, 300);
+					        });
+
+					        google.maps.event.addListener(beachMarker3, 'click', function() {
+					        	$('html,body').stop(true);
+					        	$('html,body').animate({scrollTop: jQuery('.new-wrap >.right > .blocks > .block').eq(2).offset().top}, 300);
+					        });
+					    }
+					    if (jQuery('#map').length > 0) {
+					        initMap();
+					        jQuery(window).resize(initMap);
+					    }
+					</script>
+					<div class="right">
+						<div class="blocks">
+							<div class="block">
+								<a href="#">
+									<div class="image">
+										<img src="images/project-1.jpg" alt="">
+										<div class="hover">
+											<span>View details</span>
+										</div>
+									</div>
+								</a>
+								<div class="text-block">
+									<div class="top">
+										<div class="title">
+											<h2>Poly Horizon - Epping</h2>
+										</div>
+										<div class="left">
+											<div class="address"><a href="#">20 - 28 Cambridge St, Epping NSW</a></div>
+											<div class="apartment">Apartment</div>
+										</div>
+										<div class="right">
+											<ul>
+												<li>Stamp Duty Rebate</li>
+												<li>Close the Train Satation</li>
+												<li>Rent up to $800 pw</li>
+												<li>Close to Primary School</li>
+											</ul>
+										</div>
+									</div>
+									<div class="bottom">
+										<div class="price-block">
+											<div class="block">
+												<div class="icon"><img src="images/bedroom.svg" alt="">2</div>
+												<div class="icon"><img src="images/bathroom.svg" alt="">2</div>
+												<div class="icon"><img src="images/carport.svg" alt="">2</div>
+												<div class="price">$650,000 - $700,000</div>
+											</div>
+											<div class="block">
+												<div class="icon"><img src="images/bedroom.svg" alt="">2</div>
+												<div class="icon"><img src="images/bathroom.svg" alt="">2</div>
+												<div class="icon"><img src="images/carport.svg" alt="">2</div>
+												<div class="price">$1,300,000 - $1,500,000</div>
+											</div>
+											<div class="block">
+												<div class="icon"><img src="images/bedroom.svg" alt="">2</div>
+												<div class="icon"><img src="images/bathroom.svg" alt="">2</div>
+												<div class="icon"><img src="images/carport.svg" alt="">2</div>
+												<div class="price">$1,600,000 - $1,800,000</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="block">
+								<a href="#">
+									<div class="image">
+										<img src="images/project-1.jpg" alt="">
+										<div class="hover">
+											<span>View details</span>
+										</div>
+									</div>
+								</a>
+								<div class="text-block">
+									<div class="top">
+										<div class="title">
+											<h2>Poly Horizon - Epping</h2>
+										</div>
+										<div class="left">
+											<div class="address"><a href="#">20 - 28 Cambridge St, Epping NSW</a></div>
+											<div class="apartment">Apartment</div>
+										</div>
+										<div class="right">
+											<ul>
+												<li>Stamp Duty Rebate</li>
+												<li>Close the Train Satation</li>
+												<li>Rent up to $800 pw</li>
+												<li>Close to Primary School</li>
+											</ul>
+										</div>
+									</div>
+									<div class="bottom">
+										<div class="price-block">
+											<div class="block">
+												<div class="icon"><img src="images/bedroom.svg" alt="">2</div>
+												<div class="icon"><img src="images/bathroom.svg" alt="">2</div>
+												<div class="icon"><img src="images/carport.svg" alt="">2</div>
+												<div class="price">$650,000 - $700,000</div>
+											</div>
+											<div class="block">
+												<div class="icon"><img src="images/bedroom.svg" alt="">2</div>
+												<div class="icon"><img src="images/bathroom.svg" alt="">2</div>
+												<div class="icon"><img src="images/carport.svg" alt="">2</div>
+												<div class="price">$1,300,000 - $1,500,000</div>
+											</div>
+											<div class="block">
+												<div class="icon"><img src="images/bedroom.svg" alt="">2</div>
+												<div class="icon"><img src="images/bathroom.svg" alt="">2</div>
+												<div class="icon"><img src="images/carport.svg" alt="">2</div>
+												<div class="price">$1,600,000 - $1,800,000</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="block">
+								<a href="#">
+									<div class="image">
+										<img src="images/project-1.jpg" alt="">
+										<div class="hover">
+											<span>View details</span>
+										</div>
+									</div>
+								</a>
+								<div class="text-block">
+									<div class="top">
+										<div class="title">
+											<h2>Poly Horizon - Epping</h2>
+										</div>
+										<div class="left">
+											<div class="address"><a href="#">20 - 28 Cambridge St, Epping NSW</a></div>
+											<div class="apartment">Apartment</div>
+										</div>
+										<div class="right">
+											<ul>
+												<li>Stamp Duty Rebate</li>
+												<li>Close the Train Satation</li>
+												<li>Rent up to $800 pw</li>
+												<li>Close to Primary School</li>
+											</ul>
+										</div>
+									</div>
+									<div class="bottom">
+										<div class="price-block">
+											<div class="block">
+												<div class="icon"><img src="images/bedroom.svg" alt="">2</div>
+												<div class="icon"><img src="images/bathroom.svg" alt="">2</div>
+												<div class="icon"><img src="images/carport.svg" alt="">2</div>
+												<div class="price">$650,000 - $700,000</div>
+											</div>
+											<div class="block">
+												<div class="icon"><img src="images/bedroom.svg" alt="">2</div>
+												<div class="icon"><img src="images/bathroom.svg" alt="">2</div>
+												<div class="icon"><img src="images/carport.svg" alt="">2</div>
+												<div class="price">$1,300,000 - $1,500,000</div>
+											</div>
+											<div class="block">
+												<div class="icon"><img src="images/bedroom.svg" alt="">2</div>
+												<div class="icon"><img src="images/bathroom.svg" alt="">2</div>
+												<div class="icon"><img src="images/carport.svg" alt="">2</div>
+												<div class="price">$1,600,000 - $1,800,000</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="block">
+								<a href="#">
+									<div class="image">
+										<img src="images/project-1.jpg" alt="">
+										<div class="hover">
+											<span>View details</span>
+										</div>
+									</div>
+								</a>
+								<div class="text-block">
+									<div class="top">
+										<div class="title">
+											<h2>Poly Horizon - Epping</h2>
+										</div>
+										<div class="left">
+											<div class="address"><a href="#">20 - 28 Cambridge St, Epping NSW</a></div>
+											<div class="apartment">Apartment</div>
+										</div>
+										<div class="right">
+											<ul>
+												<li>Stamp Duty Rebate</li>
+												<li>Close the Train Satation</li>
+												<li>Rent up to $800 pw</li>
+												<li>Close to Primary School</li>
+											</ul>
+										</div>
+									</div>
+									<div class="bottom">
+										<div class="price-block">
+											<div class="block">
+												<div class="icon"><img src="images/bedroom.svg" alt="">2</div>
+												<div class="icon"><img src="images/bathroom.svg" alt="">2</div>
+												<div class="icon"><img src="images/carport.svg" alt="">2</div>
+												<div class="price">$650,000 - $700,000</div>
+											</div>
+											<div class="block">
+												<div class="icon"><img src="images/bedroom.svg" alt="">2</div>
+												<div class="icon"><img src="images/bathroom.svg" alt="">2</div>
+												<div class="icon"><img src="images/carport.svg" alt="">2</div>
+												<div class="price">$1,300,000 - $1,500,000</div>
+											</div>
+											<div class="block">
+												<div class="icon"><img src="images/bedroom.svg" alt="">2</div>
+												<div class="icon"><img src="images/bathroom.svg" alt="">2</div>
+												<div class="icon"><img src="images/carport.svg" alt="">2</div>
+												<div class="price">$1,600,000 - $1,800,000</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="block">
+								<a href="#">
+									<div class="image">
+										<img src="images/project-1.jpg" alt="">
+										<div class="hover">
+											<span>View details</span>
+										</div>
+									</div>
+								</a>
+								<div class="text-block">
+									<div class="top">
+										<div class="title">
+											<h2>Poly Horizon - Epping</h2>
+										</div>
+										<div class="left">
+											<div class="address"><a href="#">20 - 28 Cambridge St, Epping NSW</a></div>
+											<div class="apartment">Apartment</div>
+										</div>
+										<div class="right">
+											<ul>
+												<li>Stamp Duty Rebate</li>
+												<li>Close the Train Satation</li>
+												<li>Rent up to $800 pw</li>
+												<li>Close to Primary School</li>
+											</ul>
+										</div>
+									</div>
+									<div class="bottom">
+										<div class="price-block">
+											<div class="block">
+												<div class="icon"><img src="images/bedroom.svg" alt="">2</div>
+												<div class="icon"><img src="images/bathroom.svg" alt="">2</div>
+												<div class="icon"><img src="images/carport.svg" alt="">2</div>
+												<div class="price">$650,000 - $700,000</div>
+											</div>
+											<div class="block">
+												<div class="icon"><img src="images/bedroom.svg" alt="">2</div>
+												<div class="icon"><img src="images/bathroom.svg" alt="">2</div>
+												<div class="icon"><img src="images/carport.svg" alt="">2</div>
+												<div class="price">$1,300,000 - $1,500,000</div>
+											</div>
+											<div class="block">
+												<div class="icon"><img src="images/bedroom.svg" alt="">2</div>
+												<div class="icon"><img src="images/bathroom.svg" alt="">2</div>
+												<div class="icon"><img src="images/carport.svg" alt="">2</div>
+												<div class="price">$1,600,000 - $1,800,000</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="block">
+								<a href="#">
+									<div class="image">
+										<img src="images/project-1.jpg" alt="">
+										<div class="hover">
+											<span>View details</span>
+										</div>
+									</div>
+								</a>
+								<div class="text-block">
+									<div class="top">
+										<div class="title">
+											<h2>Poly Horizon - Epping</h2>
+										</div>
+										<div class="left">
+											<div class="address"><a href="#">20 - 28 Cambridge St, Epping NSW</a></div>
+											<div class="apartment">Apartment</div>
+										</div>
+										<div class="right">
+											<ul>
+												<li>Stamp Duty Rebate</li>
+												<li>Close the Train Satation</li>
+												<li>Rent up to $800 pw</li>
+												<li>Close to Primary School</li>
+											</ul>
+										</div>
+									</div>
+									<div class="bottom">
+										<div class="price-block">
+											<div class="block">
+												<div class="icon"><img src="images/bedroom.svg" alt="">2</div>
+												<div class="icon"><img src="images/bathroom.svg" alt="">2</div>
+												<div class="icon"><img src="images/carport.svg" alt="">2</div>
+												<div class="price">$650,000 - $700,000</div>
+											</div>
+											<div class="block">
+												<div class="icon"><img src="images/bedroom.svg" alt="">2</div>
+												<div class="icon"><img src="images/bathroom.svg" alt="">2</div>
+												<div class="icon"><img src="images/carport.svg" alt="">2</div>
+												<div class="price">$1,300,000 - $1,500,000</div>
+											</div>
+											<div class="block">
+												<div class="icon"><img src="images/bedroom.svg" alt="">2</div>
+												<div class="icon"><img src="images/bathroom.svg" alt="">2</div>
+												<div class="icon"><img src="images/carport.svg" alt="">2</div>
+												<div class="price">$1,600,000 - $1,800,000</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="pages">
+							<div class="pages-button">
+								<a href="#" class="prev disabled">PREV</a>
+								<ul class="pages-ul">
+									<li class="active"><a href="#">1</a></li>
+									<li><a href="#">2</a></li>
+									<li><a href="#">3</a></li>
+									<li><a href="#">4</a></li>
+									<li><a href="#">5</a></li>
+									<li><a href="#">6</a></li>
+								</ul>
+								<a href="#" class="next">NEXT</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bg-image" style="background: rgba(232, 232, 232, 0.4) url(images/footer-bg.png) no-repeat; background-size: 100% 100%;"></div>
+		</section>
+	</div>
+	<section class="sidebar">
+		<ul>
+			<li><a title="xxx1" href="#"><img src="images/photo.svg" alt=""></a></li>
+			<li><a title="wechat" href="#"><img src="images/wechat.svg" alt=""></a><div class="hover"><img src="images/bitmap.svg" alt=""></div></li>
+			<li><a title="xxx2" href="#"><img src="images/talk.svg" alt=""></a></li>
+			<li><a title="phone" href="#"><img src="images/phone.svg" alt=""></a></li>
+			<li><a title="email" href="#"><img src="images/mail.svg" alt=""></a></li>
+		</ul>
+	</section>
+	<section class="modal">
+		<div class="mobile-scroll">
+			<div class="login modal-box">
+				<div class="left">
+					<h4>LOGIN</h4>
+					<h2>To explore our varity projects and price range, please log in.</h2>
+					<p style="opacity: 0">Are you an agent? <a href="#">Sign up here</a></p>
+				</div>
+				<div class="right">
+					<form action="">
+						<input type="email" placeholder="Email*">
+						<input type="password" placeholder="Password*">
+						<input type="submit" value="Login">
+					</form>
+					<div class="reg-log">
+						<div class="left">
+							<p>Don’t have an account? <a class="reg-modal" href="#">Register Now</a></p>
+						</div>
+						<div class="right">
+							<p><a href="#">Forgot Password</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="close" title="close"></div>
+			</div>
+			<div class="signup modal-box" style="display: none;">
+				<div class="left">
+					<h4>SIGN UP</h4>
+					<h2>To explore our varity projects and price range, please sign up.</h2>
+					<p>Are you an agent? <a class="reg-modal-adv" href="#">Sign up here</a></p>
+				</div>
+				<div class="right">
+					<form action="">
+						<input type="text" placeholder="Name*">
+						<input type="email" placeholder="Email*">
+						<input type="password" placeholder="Password*">
+						<input type="password" placeholder="Confirm password*">
+						<input type="submit" value="Login">
+					</form>
+					<div class="reg-log">
+						<div class="left">
+							<p>Already have an account? <a class="login-modal" href="#">Sign In now</a></p>
+						</div>
+						<div class="right">
+							<p><a href="#">Forgot Password</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="close" title="close"></div>
+			</div>
+			<form class="signup-adv modal-box" style="display: none;">
+				<div class="left">
+					<h4>SIGN UP</h4>
+					<h4 class="bottom">Not an agent? <a class="reg-modal" href="#">Sign up here</a></h4>
+				</div>
+				<div class="mid">
+					<input type="text" placeholder="Company*">
+					<input type="text" placeholder="Role*">
+					<select name="" id="">
+						<option >Industry*</option>
+						<option value="111">111</option>
+						<option value="222">222</option>
+						<option value="333">333*</option>
+					</select>
+					<input type="tel" placeholder="Phone*">
+				</div>
+				<div class="right">
+					<input type="text" placeholder="Name*">
+					<input type="email" placeholder="Email*">
+					<input type="password" placeholder="Password*">
+					<input type="password" placeholder="Confirm password*">
+					<input type="submit" value="Login">
+					<div class="reg-log">
+						<div class="left">
+							<p>Already have an account? <a class="login-modal" href="#">Sign In now</a></p>
+						</div>
+						<div class="right">
+							<p><a href="#">Forgot Password</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="close" title="close"></div>
+			</form>
+		</div>
+	</section>
+	<footer>
+		<div class="footer-top">
+			<div class="footer-top-wrap">
+				<div class="col">
+					<div class="links">
+						<ul>
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Projects</a></li>
+							<li><a href="#">Media</a></li>
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">Short List</a></li>
+							<li><a href="#">Market Insight</a></li>
+							<li><a href="#">Expert Advice</a></li>
+							<li><a href="#">Educational content</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col">
+					<div class="links">
+						<ul>
+							<li><a href="#">Services</a></li>
+							<li><a href="#">Lease & Management</a></li>
+							<li><a href="#">Real Estate Advisory</a></li>
+							<li><a href="#">Project Marketing</a></li>
+							<li><a href="#">Property Portfolio Management</a></li>
+							<li><a href="#">Property Sale</a></li>
+							<li><a href="#">Clients from Overseas</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col">
+					<div class="links">
+						<ul>
+							<li><a href="#">Login / Register</a></li>
+							<li><a href="#">Agent Login</a></li>
+							<li><a href="#">Short List</a></li>
+							<li><a href="#">Contact Us</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="social">
+					<a href="#" target="_blank" title="facebook"><i class="fab fa-facebook-f" ></i></a>
+					<a href="#" target="_blank" title="twitter"><i class="fab fa-twitter" ></i></a>
+					<a href="#" target="_blank" title="instagram"><i class="fab fa-instagram" ></i></a>
+					<a href="#" target="_blank" title="pinterest"><i class="fab fa-pinterest-p" ></i></a>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="left">
+				<p>Copyright 2018 Common Realty Group</p>
+			</div>
+			<div class="mid">
+				<div class="link">
+					<ul>
+						<li><a href="#">Terms & Conditions</a></li>
+						<li><a href="#">Disclaimer</a></li>
+						<li><a href="#">Sitemap</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="right">
+				<p>Website Designed & Powered by <a href="#">Nexty</a></p>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
